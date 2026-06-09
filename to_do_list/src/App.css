@@ -1,0 +1,61 @@
+#root {
+  min-height: 100vh;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Inter', -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard { 
+  order: -2; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.main-header { 
+  order: -1; 
+  margin-top: 0;
+}
+
+.task-section { order: 1; }
+
+.widget {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.widget-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #8b949e;
+  margin-bottom: 0.4rem;
+}
+
+.widget-value {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: #e6edf3;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
